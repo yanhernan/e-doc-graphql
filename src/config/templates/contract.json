@@ -1,0 +1,481 @@
+{
+  "name": "Contrato de Trabajo",
+  "sections": [
+    {
+      "name": "Contrato de Trabajo Cabecera",
+      "fields": [
+        {
+          "key": "COLOCAR TIPO DE CONTRATO",
+          "label": "Seleccione el tipo de contrato",
+          "question": {
+            "type": "selection_simple",
+            "placeholder": "Seleccione un tipo"
+          }
+        },
+        {
+          "key": "COLOCAR NOMBRE DE LA SOCIEDAD",
+          "label": "Cual es el nombre de la empresa",
+          "question": {
+            "type": "simple",
+            "placeholder": "Escriba el nombre de la empresa"
+          }
+        },
+        {
+          "key": "COLOCAR NOMBRE DEL REPRESENTANTE DE LA EMPRESA",
+          "label": "Cual es el nombre del representante de la empresa",
+          "question": {
+            "type": "simple",
+            "placeholder": "Escriba nombre del representante de la empresa"
+          }
+        },
+        {
+          "key": "COLOCAR NOMBRE DEL TRABAJADOR",
+          "label": "Cual es el nombre del trabajador",
+          "question": {
+            "type": "simple",
+            "placeholder": "Escriba nombre del trabajador"
+          }
+        }
+      ],
+      "content": "<p>CONTRATO INDIVIDUAL DE TRABAJO [COLOCAR TIPO DE CONTRATO] (EN LO SUCESIVO EL \"CONTRATO\"), QUE EN LOS TÉRMINOS DEL ARTÍCULO 35 DE LA LEY FEDERAL DEL TRABAJO CELEBRAN POR UNA PARTE [COLOCAR NOMBRE DE LA SOCIEDAD], REPRESENTADA EN ESTE ACTO POR EL C. [COLOCAR NOMBRE DEL REPRESENTANTE DE LA EMPRESA], Y POR LA OTRA C. [COLOCAR NOMBRE DEL TRABAJADOR] (EN LO SUCESIVO EL \"TRABAJADOR\"), CONTRATO QUE SUJETAN AL TENOR DE LAS SIGUIENTES:</p>",
+      "optional": false
+    },
+    {
+      "name": "Declaraciones titulo",
+      "content": "<h3>DECLARACIONES</h3>",
+      "optional": false
+    },
+    {
+      "name": "Declaraciones de la empresa",
+      "fields": [
+        {
+          "key": "COLOCAR NOMBRE DE LA SOCIEDAD",
+          "label": "Cual es el nombre de la empresa",
+          "question": {
+            "type": "simple",
+            "placeholder": "Escriba el nombre de la empresa"
+          }
+        },
+        {
+          "key": "COLOCAR DOMICILIO DE LA EMPRESA",
+          "label": "Cual dirección de domicilio de la empresa",
+          "question": {
+            "type": "simple",
+            "placeholder": "Escriba el dominicilio de la empresa"
+          }
+        },
+        {
+          "key": "COLOCAR NOMBRE DEL REPRESENTANTE DE LA EMPRESA",
+          "label": "Cual es el nombre del representante de la empresa",
+          "question": {
+            "type": "simple",
+            "placeholder": "Escriba nombre del representante de la empresa"
+          }
+        },
+        {
+          "key": "COLOCAR RFC DE LA EMPRESA",
+          "label": "Escriba el RFC de la empresa",
+          "question": {
+            "type": "simple",
+            "placeholder": "Escriba el rfc de la empresa"
+          }
+        }
+      ],
+      "content": [
+        "<section>",
+        "<p>I. El Patrón declara:</p>",
+        "<div>",
+        "<div>",
+        "A. Ser una persona moral, constituida y que opera conforme a las leyes mexicanas quien opera bajo el nombre comercial de [COLOCAR NOMBRE DE LA SOCIEDAD], con domicilio en [COLOCAR DOMICILIO DE LA EMPRESA], y que cuenta con las facultades legales necesarias para obligarse en términos del presente Contrato.",
+        "</div>",
+        "<div>",
+        "B. Que su representante legal, el C. [COLOCAR NOMBRE DEL REPRESENTANTE DE LA EMPRESA], cuenta con facultades para celebrar el presente contrato, y que a la presente fecha no le han sido revocadas.",
+        "</div>",
+        "<div>",
+        "C. Se encuentra inscrita y cuenta con el Registro Federal de Contribuyentes número [COLOCAR RFC DE LA EMPRESA], expedido por la Secretaría de Hacienda y Crédito Público, y que se encuentra al corriente en el cumplimiento de sus obligaciones fiscales",
+        "</div>",
+        "</div>",
+        "</section>"
+      ]
+    },
+    {
+      "name": "Declaraciones del trabajador",
+      "fields": [
+        {
+          "label": "Escriba el CURP del trabajador",
+          "key": "COLOCAR CURP DEL TRABAJADOR",
+          "question": {
+            "type": "simple",
+            "placeholder": "Escriba CURP"
+          }
+        },
+        {
+          "label": "Escriba RFC del trabajdor",
+          "key": "COLOCAR RFC",
+          "question": {
+            "type": "simple",
+            "placeholder": "Escriba RFC del trabajador"
+          }
+        },
+        {
+          "label": "Escriba Número de seguro social",
+          "key": "COLOCAR NUMERO DE SEGURO SOCIAL",
+          "question": {
+            "type": "simple",
+            "placeholder": "Escriba número de seguro social"
+          }
+        },
+        {
+          "label": "Cuenta con Infonavit",
+          "key": "TIENE CREDITO INFONAVIT",
+          "question": {
+            "type": "check",
+            "options": [
+              {
+                "text": "SI",
+                "value": "SI"
+              },
+              {
+                "text": "NO",
+                "value": "NO"
+              }
+            ]
+          }
+        },
+        {
+          "label": "Solicita servicio de guarderia",
+          "key": "SOLICITA SERVICIO DE GUARDERIA",
+          "question": {
+            "type": "check",
+            "options": [
+              {
+                "text": "SI",
+                "value": "SI"
+              },
+              {
+                "text": "NO",
+                "value": "NO"
+              }
+            ]
+          }
+        },
+        {
+          "label": "Escriba domicilio del trabajador",
+          "key": "COLOCAR DOMICILIO DEL TRABAJADOR",
+          "question": {
+            "type": "simple",
+            "placeholder": "Escriba dirección de domicilio"
+          }
+        },
+        {
+          "label": "Escriba el correo electronico del trabajador",
+          "key": "COLOCAR CORREO ELECTRONICO",
+          "question": {
+            "type": "simple",
+            "validation": "email",
+            "placeholder": "Escriba el correo electronico del trabajador"
+          }
+        },
+        {
+          "label": "Escriba el puesto de trabajo",
+          "key": "COLOCAR PUESTO DE TRABAJO",
+          "question": {
+            "type": "simple",
+            "placeholder": "Escriba el puesto de trabajo"
+          }
+        }
+      ],
+      "content": [
+        "<section>",
+        "<p>II. El Trabajador declara:</p>",
+        "<div>",
+        "<div>",
+        "A. Llamarse como se ha expresado al principio de este Contrato, ser de nacionalidad Mexicana, mayor de edad, de estado con CURP: [COLOCAR CURP DEL TRABAJADOR], con RFC [COLOCAR RFC] y con número de IMSS: [COLOCAR NUMERO DE SEGURO SOCIAL]. ",
+        "</div>",
+        "<div>",
+        "B. [TIENE CREDITO INFONAVIT] contar con crédito Infonavit y [SOLICITA SERVICIO DE GUARDERIA] requerir el servicio de guardería.",
+        "</div>",
+        "<div>",
+        "C. Tener su domicilio [COLOCAR DOMICILIO DEL TRABAJADOR].  En este domicilio y/o en el correo electrónico [COLOCAR CORREO ELECTRONICO] se llevarán a cabo todos los avisos y notificaciones relativos a la relación laboral y subsistirá en tanto no se de aviso por escrito de su modificación y por ende los avisos y notificaciones hechos en él se tendrán por legales. De igual manera, todos los recibos de nóminas serán enviados en digital al correo electrónico señalado.",
+        "</div>",
+        "<div>",
+        "D. El Trabajador bajo protesta de decir verdad manifiesta que tiene los conocimientos, capacidad y experiencia necesarios para prestar sus servicios como trabajador para el Patrón, con la categoría de [COLOCAR PUESTO DE TRABAJO].",
+        "</div>",
+        "</div>",
+        "<p>Con base en las declaraciones que anteceden, las partes convienen en sujetar el presente CONTRATO al tenor de las siguientes: </p>",
+        "</section>"
+      ]
+    },
+    {
+      "name": "Clausulas Titulo",
+      "content": "<h3>CLÁUSULAS</h3>",
+      "optional": false
+    },
+    {
+      "name": "Clausula Primera",
+      "fields": [
+        {
+          "label": "Escriba el puesto de trabajo",
+          "key": "COLOCAR PUESTO DE TRABAJO",
+          "question": {
+            "type": "simple",
+            "placeholder": "Escriba el puesto de trabajo"
+          }
+        },
+        {
+          "label": "Describa las funciones del trabajor",
+          "key": "DESCRIBA CADA UNA DE LAS FUNCIONES",
+          "question": {
+            "type": "simple",
+            "placeholder": "Escriba las funciones del trabajador"
+          }
+        }
+      ],
+      "content": [
+        "<div>PRIMERA.- SUBORDINACION Y SERVICIOS.- El Trabajador se obliga a prestar sus servicios personales y exclusivos al Patrón con la categoría de [COLOCAR PUESTO DE TRABAJO] y con las funciones que se describen a continuación [DESCRIBA CADA UNA DE LAS FUNCIONES]. El trabajador se obliga a desempeñar su puesto en todo momento con la mayor diligencia y eficiencia, bajo la dirección y dependencia de aquél; y para el caso de que los datos proporcionados por el mismo trabajador no sean exactos, el Patrón rescindirá el Contrato sin su responsabilidad en los términos de la Fracción I del Artículo 47 de la Ley Laboral, asimismo, el Trabajador deberá, excepto en el período de vacaciones, incapacidad o con permiso de ausencia, dedicarle todo su tiempo laboral, atención, habilidades y energía al Patrón y cooperará enteramente en el desarrollo de los mejores intereses del mismo.</div>",
+        "<div>El Trabajador entiende y se compromete al hecho de que pueda trabajar en conjunto y coordinando esfuerzos con otras personas físicas subordinadas o afiliadas del Patrón. El Trabajador expresamente reconoce que no es, ni llegará a ser en ninguna circunstancia Trabajador de ningún otro Patrón más que para “LA EMPRESA”, reconociéndolo como su único Patrón y, manifiesta que el único vínculo laboral existente es con él antes mencionado, obligándose en todo tiempo a desempeñar su función con la intensidad y cuidado apropiados, ya sea en el domicilio principal del Patrón o en cualquier otro establecido o que pudiera establecerse en lo futuro.</div>",
+        "<div>El Trabajador se obliga expresamente a respetar y cumplir el reglamento interno de trabajo y todas las políticas de EL PATRON, así como a que, durante el desempeño de sus funciones, habrá de acatar todas las prácticas de conducta profesional y ética, y a cumplir con las leyes aplicables en el país.</div>"
+      ],
+      "optional": false
+    },
+    {
+      "name": "Clausula Segunda",
+      "fields": [
+        {
+          "name": "Escriba la fecha de ingreso",
+          "key": "FECHA DE INGRESO",
+          "question": {
+            "type": "date",
+            "validation": "date_future"
+          }
+        },
+        {
+          "name": "Escriba la fecha de termino",
+          "key": "FECHA DE TERMINO",
+          "question": {
+            "type": "date",
+            "validation": "date_future"
+          }
+        }
+      ],
+      "content": [
+        "<div>SEGUNDA. - - DURACION DE CONTRATO Y PERIODO DE CAPACITACION. - EL PATRÓN se obliga a contratar a EL TRABAJADOR para su capacitación,  en la fuente de trabajo desde el día [FECHA DE INGRESO].</div>",
+        "<div>El periodo de capacitación tendra una duración de 3 tres meses contados a partir de la fecha indicada y concluirá el [FECHA DE TERMINO].  Al término del periodo de CAPACITACION o en el transcurso de éste, de  no acreditar  EL  TRABAJADOR  que  satisface  los  requisitos  y  conocimientos  necesarios  para  desarrollar  las labores,  a  juicio  de “LA EMPRESA”,  tomando  en  cuenta  la  opinión  del Departamento de Recursos Humanos, se dará por terminada la relación de trabajo, sin responsabilidad para el patrón</div>"
+      ],
+      "optional": false
+    },
+    {
+      "name": "Clausula Tercera",
+      "content": "TERCERA. - PACTO DE NO CONCURRENCIA. - El Trabajador se obliga a no aceptar, ya sea mediante compensación o de manera gratuita y directa o indirectamente (a través de terceros, ya sean personas físicas o jurídicas), actividades que sean similares o análogas a las previstas en el presente Contrato, o a las que el Patrón desarrolle en el futuro, para terceros distintos del Patrón, a no invertir ni adquirir derechos, acciones y/o participaciones, directa o indirectamente, en compañías, personas morales, activos, empresas, negocios, coinversiones y/o instituciones que realicen actividades análogas o similares a las previstas en el presente Contrato o que constituyan el objeto social del Patrón, ya sea como propietario, copropietario, accionista, socio, consejero, funcionario, fiduciario, representante, agente, asesor o en cualquier otro carácter, ya sea por su propio derecho o en representación de algunas sociedad de personas o capital u organización comercial, ni a contratar, llamar o inducir a ninguna persona que sea empleado o asesor del Patrón con el objeto de que dé por terminado su contrato de trabajo o de alguna otra forma dé por terminadas sus relaciones con el mismo."
+    },
+    {
+      "name": "Clausula Cuarta",
+      "content": "CUARTA. - LUGAR DE LA PRESTACION DEL SERVICIO. - Las partes convienen que el lugar en que el trabajador deberá prestar sus servicios será en el establecimiento de la fuente de trabajo del Patrón descrito anteriormente, en el inciso A del capítulo de Declaraciones del presente documento, así como en la República Mexicana y en caso de que sea requerido incluso en el extranjero o en cualquier empresa que pertenezca al grupo corporativo del Patrón. El Patrón podrá cambiar su oficina de un lugar a otro, de este modo El Trabajador expresamente otorga su consentimiento y acepta desde ahora dicho cambio, cualquiera que éste sea y se obliga a trabajar donde se establezca la oficina."
+    },
+    {
+      "name": "Clausula Quinta",
+      "fields": [
+        {
+          "lavel": "Escriba los dias laborables",
+          "key": "COLOCAR DIAS LABORABLES",
+          "question": {
+            "type": "simple",
+            "placeholder": "Escriba los días laborables"
+          }
+        }
+      ],
+      "content": [
+        "<div>QUINTA.- JORNADA LABORAL.-  La jornada laboral de El Trabajador será de  [COLOCAR DIAS LABORABLES] en el horario de [COLOCAR EL HORARIO DE LA JORNADA] con un descanso intermedio de [COLOCAR EL TIEMPO PARA TOMAR LOS ALIMENTOS] para tomar sus alimentos y/o descanso fuera de la fuente de trabajo,    para un total de 48 cuarenta y ocho horas a la semana, siendo los días de trabajo del Lunes a Sábado de cada semana, de conformidad con el Artículo 59, segundo párrafo de la Ley Federal del Trabajo y de acuerdo a las necesidades del servicio, descansando los días Domingo de cada semana, a fin de obtener la mayor eficiencia de los recursos humanos y materiales de ésta..</div>",
+        "<div>El Trabajador deberá checar su ingreso y egreso de las instalaciones de la fuente de trabajo en la bitácora o reloj y quedando prohibido registrar asistencia a otros empleados.</div>"
+      ]
+    },
+    {
+      "name": "Clausula Sexta",
+      "content": "SEXTA.- MODIFICACION DE LA JORNADA DE TRABAJO.- El Trabajador autoriza al Patrón para que éste pueda modificar dicha jornada de trabajo o la distribución de las horas laborables conforme a las necesidades del servicio, sin ninguna responsabilidad para el patrón, ya que El Trabajador acepta expresamente que su jornada de trabajo es variable, pudiendo modificarse discrecionalmente, sin que por este motivo se considere que la modificación sea definitiva, siempre y cuando dicha modificación no exceda de los máximos legales."
+    },
+    {
+      "name": "Clausula Septima",
+      "content": [
+        "<div>SÉPTIMA. - HORAS EXTRAORDINARIAS. - Queda prohibido trabajar tiempo extra, si no es con consentimiento previo y de acuerdo con instrucciones escritas giradas por el Patrón. Cuando por cualquier circunstancia de El Trabajador deba trabajar más horas de las señaladas en la Cláusula Cuarta como jornada de trabajo, éste recabará previamente del Patrón las instrucciones y consentimiento por escrito a que se refiere esta Cláusula, de lo contrario, no podrá prestar sus servicios en forma extraordinaria.</div>",
+        "<div>Para el caso en que EL TRABAJADOR falte a la fuente de trabajo sin causa justificada, se descontará el pago del día correspondiente, en el entendido en que si EL TRABAJADOR acumula más de 3 tres faltas injustificadas en un periodo menor a 30 treinta días se rescindirá el presente contrato.</div>"
+      ]
+    },
+    {
+      "name": "Clausula Octava",
+      "fields": [
+        {
+          "label": "Escriba el salario integrado diario",
+          "key": "COLOCAR MONTO DIARIO INTEGRADO DEL SALARIO",
+          "question": {
+            "type": "currency",
+            "validation": "number"
+          }
+        },
+        {
+          "label": "Escriba la periocidad del pago",
+          "key": "COLOCAR PERIODICIDAD DE PAGO",
+          "question": {
+            "type": "simple"
+          }
+        }
+      ],
+      "content": "OCTAVA.- SALARIO.- Durante la vigencia del presente Contrato, El Trabajador recibirá del Patrón como remuneración por sus servicios y las obligaciones asumidas conforme al mismo, un salario [COLOCAR MONTO DIARIO INTEGRADO DEL SALARIO], suma que incluye la parte proporcional del séptimo día, dicho pago se hará [COLOCAR PERIODICIDAD DE PAGO], en caso de que dicho día de pago no sea hábil en México, la remuneración se pagará el día hábil anterior, en el entendido de que dicho pago cubrirá los salarios devengados de cada séptimo día de cada semana al mes, respectivamente."
+    },
+    {
+      "name": "Clausula Novena",
+      "content": "NOVENA.- LUGAR DE PAGO DEL SALARIO.- El Trabajador expresamente conviene que el Patrón podrá pagarle su salario, bien en las oficinas del mismo o depositando éste el monto de cualquier otra prestación a su favor en la cuenta bancaria que el Trabajador designe, una vez hechas las retenciones y deducciones que corresponda, queda entendido y convenido que el depósito en la Institución de Crédito correspondiente hará las veces de recibo de salario en los términos del artículo 804 de la Ley Federal del Trabajo."
+    },
+    {
+      "name": "Clasula Decima",
+      "fields": [
+        {
+          "label": "Escriba los días de descanso",
+          "key": "COLOCAR CANTIDAD DE DIAS DE DESCANSO SEMANAL",
+          "question": {
+            "type": "simple"
+          }
+        }
+      ],
+      "content": "DÉCIMA. - DIA DE DESCANSO. - El Trabajador tendrá derecho a disfrutar semanalmente de [COLOCAR CANTIDAD DE DIAS DE DESCANSO SEMANAL] de descanso con goce de sueldo, que determinará el Patrón de acuerdo a las necesidades de la empresa, queda entendido que la compensación por dicho día de descanso se incluye en el salario previsto en la Cláusula Octava, ya que el mismo representa el monto total de la compensación semanal de El Trabajador."
+    },
+    {
+      "name": "Clausula Decima Primera",
+      "content": [
+        "<div>DÉCIMA PRIMERA. - DIAS DE DESCANSO OBLIGATORIOS. - El Trabajador disfrutará de los días de descanso obligatorios señalados en el artículo 74 de la Ley Federal del Trabajo, cuyo salario también queda cubierto con la cantidad antes señalada, por tratarse de la compensación semanal de El Trabajador.</div>",
+        "<div>Serán días de descanso obligatorios: El 1º de Enero, el primer lunes de Febrero, el tercer lunes de Marzo, el tercer lunes de Septiembre, el tercer lunes de Noviembre, el 25 de Diciembre y el 1° de Diciembre de cada seis años, cuando corresponda a la transmisión del Poder Ejecutivo Federal.</div>"
+      ]
+    },
+    {
+      "name": "Clausula Decima Segunda",
+      "content": [
+        "<div>DÉCIMA SEGUNDA. - DISFRUTE DE VACACIONES. - El Trabajador disfrutará de un período anual de vacaciones de conformidad con lo previsto por el artículo 76 y demás relativos y aplicables de la Ley Federal del Trabajo, en la inteligencia de que dichos días se distribuirán a lo largo del año y se determinarán conforme a las necesidades del servicio. En caso de que a la fecha de firma del presente contrato o con posterioridad a la misma, se le adeuden al trabajador días de vacaciones, éste podrá disfrutarlos durante el período correspondiente, siempre y cuando sean determinados conforme a las necesidades del servicio.</div>",
+        "<div>Para el supuesto de que El Trabajador no disfrute de los días de vacaciones que le corresponden en cada período, no podrá solicitarlos posteriormente, debido a que habrá prescrito su derecho a disfrutarlos. El salario por el período antes mencionado también queda pagado con el salario mensual señalado en la Cláusula Octava anterior.</div>",
+        "<div>Las vacaciones no podrán compensarse con una remuneración.</div>",
+        "<div>Si la relación de trabajo termina antes de que se cumpla el año de servicios, el trabajador tendrá derecho a una remuneración proporcional al tiempo de servicios prestados.</div>"
+      ]
+    },
+    {
+      "name": "Clausula Decimo Tercera",
+      "content": [
+        "<div>DÉCIMA TERCERA. - AGUINALDO. - El Trabajador tendrá derecho a recibir un aguinaldo anual, que deberá pagarse antes del día 20 de Diciembre de cada año, equivalente a 15 días de salario nominal.</div>",
+        "<div>Cuando no haya cumplido el año de servicios, tendrá derecho a que se le pague en proporción al tiempo trabajado, de conformidad con el Artículo 87 de la Ley Federal del Trabajo.</div>"
+      ]
+    },
+    {
+      "name": "Clausula Decimo Cuarta",
+      "content": [
+        "DÉCIMA CUARTA. – RECIBOS DE PAGOS. -  El Trabajador se obliga a firmar en cada día de pago a favor del Patrón el recibo de pago que le expida el mismo por la totalidad de las cantidades devengadas a esa fecha. El Trabajador reconoce y conviene expresamente que la expedición del recibo implicará su conformidad de que la remuneración recibida cubre el trabajo desempeñado hasta esa fecha, sin que pueda exigir posteriormente el pago de prestación alguna por el periodo de que se trate. La firma del recibo correspondiente implicará un finiquito total a favor del Patrón de todos los sueldos y prestaciones devengados por El Trabajador por el período correspondiente a los servicios prestados hasta esa fecha, independientemente de que dicho recibo contenga o no una declaración en tal sentido."
+      ]
+    },
+    {
+      "name": "Clausula Decima Quinta",
+      "content": [
+        "DÉCIMA QUINTA. - El Trabajador reconoce que: ",
+        "    a) Con anterioridad a la fecha de este Contrato no ha tenido acceso a información relacionada con el Patrón; y. ",
+        "    b) Con posterioridad a la fecha del presente Contrato y durante su vigencia, tendrá acceso a dicha información y documentos que el Patrón considera propios, confidenciales y que contienen secretos comerciales. ",
+        "Dicha información y documentos (en lo sucesivo \"Información Confidencial\") puede incluir información relacionada con negocios contractuales, listas de clientes, contratos con proveedores, negocios o asuntos financieros, operaciones, controles internos o procedimientos de seguridad del Patrón o del Cliente. ",
+        "El Trabajador se obliga a que durante la vigencia del presente Contrato y después de su terminación: ",
+        "    a) No tratar la Información Confidencial con personal que no tenga \"necesidad de conocerla\", ni a terceros que no sean empleados directos del Patrón, sin contar con el previo consentimiento por escrito del mismo; ",
+        "    b) No utilizará ninguna Información Confidencial, excepto en la medida que se requiera para el cumplimiento de sus obligaciones para con el Patrón;",
+        "    c) No copiará ningún documento o medio que contenga Información Confidencial, ni las extraerá de las instalaciones o lugar en el que el Patrón preste servicios, excepto cuando se requiera para el cumplimiento de sus obligaciones para con el mismo, en cuyo caso, El Trabajador tomará, en todo momento, las medidas necesarias para evitar su uso no autorizado.",
+        "En caso de que El Trabajador deba copiar algún documento o medio para lo que esté autorizado de conformidad con las disposiciones anteriores, deberá reproducir fielmente en dichas copias los avisos referentes a derechos de autor y a la titularidad de la información propia del Patrón.",
+        "Al momento de la terminación de la relación laboral con El Trabajador, éste devolverá al Patrón de inmediato todos los documentos, medios y otros materiales en forma tangible que contengan Información Confidencial (sin conservar ninguna copia), junto con cualesquiera otros bienes y llaves del Patrón que se encuentren en su posesión o bajo su control. ",
+        "El Trabajador se obliga a cumplir con todos los procedimientos de seguridad del Patrón, incluyendo, de manera enunciativa más no limitativa, los concernientes a la seguridad del equipo de cómputo y contraseñas. De igual forma, se obliga a no ingresar a ninguna de las computadoras del Patrón o de los clientes de éste, a excepción de las que le hayan sido autorizadas; a no ingresar a las mismas después de que su relación de trabajo se haya dado por terminada; a informar de inmediato al Patrón, tan pronto como tenga conocimiento de ello, de cualquier violación o ingreso no autorizado, así como del uso o reproducciones no autorizadas o de interferencia por parte de terceros con los programas de cómputo, Información Confidencial u otros materiales o equipos de investigación y desarrollo propiedad del Patrón.",
+        "El trabajador reconoce que todas las oportunidades de negocios (relacionadas en cualquier forma con las operaciones presentes o futuras del Patrón independientemente de que El Trabajador tenga conocimiento de ellas o no) que se pongan a consideración de El Trabajador durante la vigencia del presente Contrato son, y serán propiedad exclusiva del Patrón y otorgará a favor del Patrón, sin ninguna compensación adicional, los documentos que éste le solicite para hacer constar su titularidad respecto de las oportunidades de negocios mencionados."
+      ]
+    },
+    {
+      "name": "Clausula Decimo Sexta",
+      "content": [
+        "DÉCIMA SEXTA. - SEGURIDAD SOCIAL. - El Patrón se obliga a afiliar a El Trabajador al Instituto Mexicano del Seguro Social (IMSS), autorizando ésta a que se le deduzca de su salario, el impuesto sobre productos de trabajo, las cuotas obreras del INSTITUTO MEXICANO DEL SEGURO SOCIAL, así como cualquier otra cantidad a su cargo, de conformidad con lo establecido en las disposiciones legales en vigor al momento en que se realice el descuento respectivo. ",
+        "El Trabajador queda obligado a sujetarse a los reconocimientos médicos que ordene el Patrón, de acuerdo con lo establecido por el Artículo 134, Fracción X de la Ley Federal del Trabajo, ya sea a través del IMSS o del médico que señale el Patrón, reconocimiento o examen médico que podrá ser tan extenso como el Patrón lo determine, en la inteligencia de que el médico que los practique será retribuido por el Patrón."
+      ]
+    },
+    {
+      "name": "Clausula Decima Septima",
+      "content": [
+        "DÉCIMA SÉPTIMA. - CAPACITACION. -  El Patrón se obliga a capacitar a El Trabajador o a hacer que se le capacite de conformidad con el plan y los programas de capacitación y adiestramiento debidamente registrados con las autoridades competentes. Por su parte, es obligación de El Trabajador cumplir con los programas, cursos, sesiones de grupo y actividades que formen parte de estos y a presentar los exámenes de evaluación de conocimientos y aptitudes que le sean requeridos, así como atender las indicaciones de las personas quienes impartan la capacitación o adiestramiento."
+      ]
+    },
+    {
+      "name": "Clausula Decima Octava",
+      "content": [
+        "DÉCIMA OCTAVA. - DISPOSICIONES APLICABLES. - Salvo lo dispuesto en este Contrato, las partes convienen que se aplicarán las disposiciones de la Ley Federal del Trabajo y que se someterán expresamente a la jurisdicción y competencia de la Junta Local de Conciliación y Arbitraje del Estado de Querétaro, con residencia en la Ciudad de Santiago de Querétaro, Querétaro, para resolver cualquier controversia con respecto a la interpretación, ejecución y cumplimiento del presente Contrato."
+      ]
+    },
+    {
+      "name": "Clausula Decima Novena",
+      "content": [
+        "DÉCIMA NOVENA. - OBLIGACIONES DE “EL TRABAJADOR”. - “EL TRABAJADOR” se obliga a cumplir las disposiciones de las normas de trabajo que le sean aplicables y en especial con las contenidas en el reglamento interior de trabajo; observar las medidas preventivas e higiénicas para la seguridad y protección del personal y está expresamente de acuerdo y acepta las siguientes obligaciones a su cargo.",
+        "a)Presentarse diariamente a la hora que se le indique para iniciar la jornada de trabajo.",
+        "b)Acatar y obedecer las órdenes e instrucciones que, durante su estancia en el centro de trabajo, le sea dada por sus superiores y que sea inherente al trabajo.",
+        "c)Obedecer todas y cada una de las órdenes generales y especiales que \"LA EMPRESA\" exprese mediante sus representantes y que tengan por objeto la realización y ejecución de los trabajos objeto de este Contrato.",
+        "d)Realizar su trabajo personal con la intensidad, cuidado y esmero apropiado, bajo la dirección, dependencia, y subordinación de los representantes de \"LA EMPRESA\" así como a cumplir las órdenes e instrucciones que reciba en todo lo concerniente al trabajo contratado.",
+        "e)Es responsable de resarcir a \"LA EMPRESA\" por cualquier daño y/o perjuicio que \"EL TRABAJADOR\" ocasione por causas imputables a éste y con relación a cualquier bien propiedad de ésta que se le asigne como herramienta de trabajo. Es también obligación conservar cualquier bien que reciba de \"LA EMPRESA\" en buen estado. Los bienes otorgados a el trabajador siempre deberán dejarse en las instalaciones del centro de trabajo de \"LA EMPRESA\" y bajo ninguna circunstancia lo podrá llevar a su domicilio, ni utilizarlo en asuntos personales, sin la previa autorización de \"EL PATRON\". Cualquier incumplimiento a esta cláusula será considerado como una causa de rescisión de la relación de trabajo, sin responsabilidad para \"LA EMPRESA\".",
+        "f)Someterse a los exámenes médicos que le requiera \"LA EMPRESA\" para calificar su estado de salud, sus fuerzas, aptitudes o condiciones físicas o mentales, a fin de lograr una mayor eficiencia en su rendimiento y productividad.",
+        "g)Cumplir con las disposiciones que rigen el Reglamento Interior de Trabajo que existe dentro de la empresa cuya copia recibe “EL TRABAJADOR” en el momento de la firma del presente Contrato, de tal manera que su contenido se acepta para los efectos legales correspondientes.",
+        "h)Respetar la categoría de sus superiores jerárquicos y realizar sus funciones frente a sus subordinados, en su caso, con puntualidad, eficiencia y compañerismo, con la finalidad de fomentar una relación cordial de trabajo en el seno de la empresa.",
+        "Cumplir con todo y por todo con el contenido del cuadro ocupacional de su puesto."
+      ]
+    },
+    {
+      "name": "Clausula Vigesima",
+      "content": "VIGÉSIMA. OBLIGACION DE “EL PATRON”   .- “LA EMPRESA”   se obliga a pagar a “EL TRABAJADOR” su salario en el lugar y tiempo convenidos, proporcionar los útiles, instrumentos y materiales de trabajo y local seguro para su guarda; abstenerse sus representantes de maltratos de palabra o de obra; contar con las instalaciones necesarias de acuerdo con los principios de seguridad e higiene, cumplir con las disposiciones relativas a la prevención de accidente y enfermedades de trabajo; y afiliar y pagar las cuotas y aportaciones de “EL TRABAJADOR” correspondientes al IMSS (INSTITUTO MEXICANO DEL SEGURO SOCIAL), INFONAVIT (INSTITUTO DEL FONDO NACIONAL DE LA VIVIENDA PARA LOS TRABAJADORES) y asumir cualquier otra obligación que le corresponda y ser derivada de la relación laboral que nos ocupa."
+    },
+    {
+      "name": "Clausula Vigesima Primera",
+      "content": [
+        "VIGÉSIMA PRIMERA. - RESCISION Y TERMINACION. - Este Contrato podrá rescindirse o darse por terminado sin responsabilidad para \"LA EMPRESA\" en los términos siguientes:",
+        "a)La baja de eficiencia, el incumplimiento total o parcial de las órdenes dadas por \"LA EMPRESA\" o la mala prestación de los resultados del trabajo, será considerara como un acto de desobediencia en los términos de la Fracción XI del artículo 47 de la Ley Federal del Trabajo, independientemente de las faltas de probidad u honradez que pudieran atribuirse a \"EL TRABAJADOR\".",
+        "b)El incumplimiento total o parcial de las órdenes dadas por \"LA EMPRESA\" o la mala presentación de los resultados del trabajo por causas imputable a “EL TRABAJADOR”, será considerado como un acto de desobediencia en los términos de la Fracción XI del Artículo 47 de la Ley Federal del Trabajo, independientemente de las faltas de probidad u honradez o cualquier otra causal de rescisión que pudieran atribuirse a “EL TRABAJADOR”.",
+        "c)El engaño de \"EL TRABAJADOR\" con referencias falsas en las que se atribuya tener capacidad, aptitudes o facultades para efectuar el trabajo contratado que sea debidamente acreditado dentro de los primeros treinta días de su prestación de servicios, será causa de rescisión del presente contrato sin ninguna responsabilidad para \"LA EMPRESA\".",
+        "d)Por incurrir “EL TRABAJADOR” en los hechos sancionados por el Artículo 47 de la Ley Federal del Trabajo, así como por incumplir las obligaciones del Artículo 134 o por incurrir en las prohibiciones del Artículo 135 de la misma codificación laboral vigente.",
+        "e)Por realizarse los supuestos que señala el Artículo 33 de la Ley Federal del Trabajo.",
+        "f)Por las causas de terminación que señala el Artículo 53 y el diverso Artículo 434 de la propia Ley, o bien,",
+        "g)Por la violación por parte de “EL TRABAJADOR” de cualquiera de las cláusulas de este Contrato o del Reglamento Interior de Trabajo, y;",
+        "h)Falta grave a las obligaciones que impone la relación de trabajo.",
+        "i)Abandono del trabajo.",
+        "j)Por cualquiera de las causas de rescisión de la relación de trabajo que señala el artículo 47 de código del trabajo vigente.",
+        "Se entiende por abandono del trabajo:",
+        "1) La salida intempestiva e injustificada del trabajador o trabajadora durante las horas laborales del sitio trabajo, sin permiso del patrono o de la patrona o de quien a éste represente.",
+        "2) La negativa a trabajar en las tareas a que ha sido destinado, siempre que ellas estén de acuerdo con el respectivo contrato o con la Ley."
+      ]
+    },
+    {
+      "name": "Clausula Vigesima Segunda",
+      "content": [
+        "VIGÉSIMA SEGUNDA. - MODIFICACION DEL CONTRATO. - El presente Contrato podrá modificarse únicamente mediante documento por escrito Y firmado por ambas partes."
+      ]
+    },
+    {
+      "name": "Clausula Vigesima Tercera",
+      "content": [
+        "<div>VIGÉSIMA TERCERA.-NOTIFICACIONES.- Las notificaciones, consentimientos, autorizaciones, declaraciones, aprobaciones, documentos y demás comunicaciones (en lo sucesivo y en conjunto las \"Notificaciones\") que este Contrato requiere o permite se harán por escrito y se entregarán personalmente o se enviarán por correo certificado (con portes pagados y acuse de recibo) a las partes a sus respectivos domicilios que se señalan con anterioridad o a cualquier otro domicilio que cualquiera de ellas notifique a la otra por escrito. Queda entendido y convenido que a menos que el Patrón reciba notificación por escrito de cualquier cambio de domicilio, el domicilio de El Trabajador mencionado con anterioridad será aquel a donde se envíen todas las comunicaciones dirigidas a éste.</div>",
+        "<div>Se conviene expresamente en que la violación a cualquiera de las obligaciones consignadas en este contrato por parte del trabajador es causal de rescisión del mismo sin responsabilidad para la empresa.</div>"
+      ]
+    },
+    {
+      "name": "Clausula Vigesima Cuarta",
+      "content": [
+        "VIGÉSIMA CUARTA. JURISDICCIÓN. - Las partes convienen en que lo no previsto en este instrumento, se regirá por las disposiciones de la Ley laboral de aplicación general para su interpretación, observancia, ejecución y cumplimiento, sujetándose expresamente a la competencia y jurisdicción de cualquiera de las Juntas Especiales de la Junta Local competente de Conciliación y Arbitraje del Estado de Querétaro.",
+        "En testimonio de lo anterior, sin mediar dolo, mala fe, lesión, ignorancia, violencia o cualquier otro vicio del consentimiento que pudiera invalidarlo, estando conformes con su contenido y fuerza legal en la ciudad de Querétaro, Querétaro, el día [CurrentDay], [CurrentMonth] y [CurrentYear] lo firman en duplicado y ante los testigos que suscriben."
+      ]
+    }
+  ],
+  "signatures": [
+    [
+      {
+        "label": "EL PATRÓN"
+      },
+      {
+        "label": "EL TRABAJADOR"
+      },
+      {
+        "label": "TESTIGO"
+      },
+      {
+        "label": "TESTIGO"
+      }
+    ]
+  ]
+}
