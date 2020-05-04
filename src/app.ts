@@ -14,7 +14,7 @@ const main = async () => {
     validate: false,
   });
 
-  const server = new ApolloServer({ schema });
+  const server = new ApolloServer({ schema, introspection: true, playground: { settings: { "editor.theme": "dark" } } });
   const app: any = Express();
   server.applyMiddleware({ app });
   app.listen({ port: process.env.PORT || 3333 }, () =>
