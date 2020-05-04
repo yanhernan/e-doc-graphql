@@ -1,9 +1,4 @@
-import Templates, {
-  ITemplate,
-  IAnswer,
-  ISection,
-  IField,
-} from "../config/templates";
+import Templates, { ITemplate, IAnswer, IField } from "../config/templates";
 import fs from "fs";
 import moment from "moment";
 import pdf from "html-pdf";
@@ -12,35 +7,38 @@ import "moment/locale/es";
 export const generateDoc = async (
   template: string,
   params: IAnswer[],
-  options: { lang: string, output: string | undefined, stream: boolean | undefined } | undefined = { lang: "en", output: undefined, stream: undefined }
+  options:
+    | { lang: string; output: string | undefined; stream: boolean | undefined }
+    | undefined = { lang: "en", output: undefined, stream: undefined }
 ) => {
-  
   const strDoc = buildDoc(template, params, options);
   const time = new Date().getTime();
   const filename = `./${time}.pdf`;
   const res = await new Promise<string | fs.ReadStream>((resolve, reject) => {
     const generator = pdf.create(strDoc);
-    const isStream  = options && options.stream;
-    if (!isStream) { 
-      generator.toFile(options ? options.output || filename : filename, (err, res) => {
+    const isStream = options && options.stream;
+    if (!isStream) {
+      generator.toFile(
+        options ? options.output || filename : filename,
+        (err, res) => {
+          if (!err) {
+            resolve(res.filename);
+          } else {
+            reject(err.message);
+          }
+        }
+      );
+    } else {
+      generator.toStream((err, res) => {
         if (!err) {
-          resolve(res.filename);
+          resolve(res);
         } else {
           reject(err.message);
         }
       });
-    } else {
-      generator.toStream((err, res) => {
-        if (!err) {
-          resolve(res)
-        } else {
-          reject(err.message);
-        }
-      })
     }
   });
   return res;
-  
 };
 
 export const buildDoc = (
@@ -67,14 +65,11 @@ export const buildDoc = (
   let content = "";
   for (let i = 0; i < tmpl.sections.length; i += 1) {
     let section = "";
-    if (typeof tmpl.sections[i].content !== "string") {
-      section = (tmpl.sections[i].content as string[]).reduce(
-        (a, c) => a + c,
-        ""
-      );
-    } else {
-      section = tmpl.sections[i].content as string;
-    }
+    section = (tmpl.sections[i].content as string[]).reduce(
+      (a, c) => a + c,
+      ""
+    );
+
     const fields = tmpl.sections[i].fields;
     if (fields) {
       fields.forEach((f) => {
@@ -107,10 +102,10 @@ export const buildQuestion = (template: string) => {
       res.push(f);
     }
   });
-  return res;
+  return res.filter((f) => f.label);
 };
 
-const findTemplate = (template: string) => {
+export const findTemplate = (template: string) => {
   if (template in Templates) {
     const templateSelect: ITemplate = (Templates as any)[template];
     return templateSelect;

@@ -3,7 +3,7 @@ import Contract from "./contract.json";
 export type ITypeQuestion = "simple" |  "selection_simple"
 
 export type IQuestion = {
-    type: ITypeQuestion;
+    type: string;
     placeholder: string;
     validation: string;
 }
@@ -17,7 +17,7 @@ export type IField = {
 export type ISection = {
     name: string;
     fields: IField[];
-    content: string | string[];
+    content: string[];
     optional?: boolean;
 }
 

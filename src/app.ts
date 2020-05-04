@@ -1,11 +1,28 @@
-import express, { Request, Response } from "express";
+import { ApolloServer } from "apollo-server-express";
+import Express from "express";
+import "reflect-metadata";
+import { buildSchema } from "type-graphql";
 
-const app = express();
+// resolvers
+import { TemplateResolver } from "./resolvers/Template";
+import { QuestionResolver } from "./resolvers/Question";
 
-app.get("/", (req: Request, res: Response) => {
-    res.send("Hello, World!")
-});
+const main = async () => {
+  const schema = await buildSchema({
+    resolvers: [TemplateResolver, QuestionResolver],
+    emitSchemaFile: true,
+    validate: false,
+  });
 
-app.listen(3000, () => {
-    console.log("Running Type Script");
+  const server = new ApolloServer({ schema });
+  const app: any = Express();
+  server.applyMiddleware({ app });
+  app.listen({ port: 3333 }, () =>
+    console.log(
+      `🚀 Server ready and listening at ==> http://localhost:3333${server.graphqlPath}`
+    )
+  );
+};
+main().catch((error) => {
+  console.log(error, "error");
 });

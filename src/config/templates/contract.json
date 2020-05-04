@@ -37,12 +37,12 @@
           }
         }
       ],
-      "content": "<p>CONTRATO INDIVIDUAL DE TRABAJO [COLOCAR TIPO DE CONTRATO] (EN LO SUCESIVO EL \"CONTRATO\"), QUE EN LOS TÉRMINOS DEL ARTÍCULO 35 DE LA LEY FEDERAL DEL TRABAJO CELEBRAN POR UNA PARTE [COLOCAR NOMBRE DE LA SOCIEDAD], REPRESENTADA EN ESTE ACTO POR EL C. [COLOCAR NOMBRE DEL REPRESENTANTE DE LA EMPRESA], Y POR LA OTRA C. [COLOCAR NOMBRE DEL TRABAJADOR] (EN LO SUCESIVO EL \"TRABAJADOR\"), CONTRATO QUE SUJETAN AL TENOR DE LAS SIGUIENTES:</p>",
+      "content": ["<p>CONTRATO INDIVIDUAL DE TRABAJO [COLOCAR TIPO DE CONTRATO] (EN LO SUCESIVO EL \"CONTRATO\"), QUE EN LOS TÉRMINOS DEL ARTÍCULO 35 DE LA LEY FEDERAL DEL TRABAJO CELEBRAN POR UNA PARTE [COLOCAR NOMBRE DE LA SOCIEDAD], REPRESENTADA EN ESTE ACTO POR EL C. [COLOCAR NOMBRE DEL REPRESENTANTE DE LA EMPRESA], Y POR LA OTRA C. [COLOCAR NOMBRE DEL TRABAJADOR] (EN LO SUCESIVO EL \"TRABAJADOR\"), CONTRATO QUE SUJETAN AL TENOR DE LAS SIGUIENTES:</p>"],
       "optional": false
     },
     {
       "name": "Declaraciones titulo",
-      "content": "<h3>DECLARACIONES</h3>",
+      "content": ["<h3>DECLARACIONES</h3>"],
       "optional": false
     },
     {
@@ -208,7 +208,7 @@
     },
     {
       "name": "Clausulas Titulo",
-      "content": "<h3>CLÁUSULAS</h3>",
+      "content": ["<h3>CLÁUSULAS</h3>"],
       "optional": false
     },
     {
@@ -266,11 +266,11 @@
     },
     {
       "name": "Clausula Tercera",
-      "content": "TERCERA. - PACTO DE NO CONCURRENCIA. - El Trabajador se obliga a no aceptar, ya sea mediante compensación o de manera gratuita y directa o indirectamente (a través de terceros, ya sean personas físicas o jurídicas), actividades que sean similares o análogas a las previstas en el presente Contrato, o a las que el Patrón desarrolle en el futuro, para terceros distintos del Patrón, a no invertir ni adquirir derechos, acciones y/o participaciones, directa o indirectamente, en compañías, personas morales, activos, empresas, negocios, coinversiones y/o instituciones que realicen actividades análogas o similares a las previstas en el presente Contrato o que constituyan el objeto social del Patrón, ya sea como propietario, copropietario, accionista, socio, consejero, funcionario, fiduciario, representante, agente, asesor o en cualquier otro carácter, ya sea por su propio derecho o en representación de algunas sociedad de personas o capital u organización comercial, ni a contratar, llamar o inducir a ninguna persona que sea empleado o asesor del Patrón con el objeto de que dé por terminado su contrato de trabajo o de alguna otra forma dé por terminadas sus relaciones con el mismo."
+      "content": ["TERCERA. - PACTO DE NO CONCURRENCIA. - El Trabajador se obliga a no aceptar, ya sea mediante compensación o de manera gratuita y directa o indirectamente (a través de terceros, ya sean personas físicas o jurídicas), actividades que sean similares o análogas a las previstas en el presente Contrato, o a las que el Patrón desarrolle en el futuro, para terceros distintos del Patrón, a no invertir ni adquirir derechos, acciones y/o participaciones, directa o indirectamente, en compañías, personas morales, activos, empresas, negocios, coinversiones y/o instituciones que realicen actividades análogas o similares a las previstas en el presente Contrato o que constituyan el objeto social del Patrón, ya sea como propietario, copropietario, accionista, socio, consejero, funcionario, fiduciario, representante, agente, asesor o en cualquier otro carácter, ya sea por su propio derecho o en representación de algunas sociedad de personas o capital u organización comercial, ni a contratar, llamar o inducir a ninguna persona que sea empleado o asesor del Patrón con el objeto de que dé por terminado su contrato de trabajo o de alguna otra forma dé por terminadas sus relaciones con el mismo."]
     },
     {
       "name": "Clausula Cuarta",
-      "content": "CUARTA. - LUGAR DE LA PRESTACION DEL SERVICIO. - Las partes convienen que el lugar en que el trabajador deberá prestar sus servicios será en el establecimiento de la fuente de trabajo del Patrón descrito anteriormente, en el inciso A del capítulo de Declaraciones del presente documento, así como en la República Mexicana y en caso de que sea requerido incluso en el extranjero o en cualquier empresa que pertenezca al grupo corporativo del Patrón. El Patrón podrá cambiar su oficina de un lugar a otro, de este modo El Trabajador expresamente otorga su consentimiento y acepta desde ahora dicho cambio, cualquiera que éste sea y se obliga a trabajar donde se establezca la oficina."
+      "content": ["CUARTA. - LUGAR DE LA PRESTACION DEL SERVICIO. - Las partes convienen que el lugar en que el trabajador deberá prestar sus servicios será en el establecimiento de la fuente de trabajo del Patrón descrito anteriormente, en el inciso A del capítulo de Declaraciones del presente documento, así como en la República Mexicana y en caso de que sea requerido incluso en el extranjero o en cualquier empresa que pertenezca al grupo corporativo del Patrón. El Patrón podrá cambiar su oficina de un lugar a otro, de este modo El Trabajador expresamente otorga su consentimiento y acepta desde ahora dicho cambio, cualquiera que éste sea y se obliga a trabajar donde se establezca la oficina."]
     },
     {
       "name": "Clausula Quinta",
@@ -291,7 +291,7 @@
     },
     {
       "name": "Clausula Sexta",
-      "content": "SEXTA.- MODIFICACION DE LA JORNADA DE TRABAJO.- El Trabajador autoriza al Patrón para que éste pueda modificar dicha jornada de trabajo o la distribución de las horas laborables conforme a las necesidades del servicio, sin ninguna responsabilidad para el patrón, ya que El Trabajador acepta expresamente que su jornada de trabajo es variable, pudiendo modificarse discrecionalmente, sin que por este motivo se considere que la modificación sea definitiva, siempre y cuando dicha modificación no exceda de los máximos legales."
+      "content": ["SEXTA.- MODIFICACION DE LA JORNADA DE TRABAJO.- El Trabajador autoriza al Patrón para que éste pueda modificar dicha jornada de trabajo o la distribución de las horas laborables conforme a las necesidades del servicio, sin ninguna responsabilidad para el patrón, ya que El Trabajador acepta expresamente que su jornada de trabajo es variable, pudiendo modificarse discrecionalmente, sin que por este motivo se considere que la modificación sea definitiva, siempre y cuando dicha modificación no exceda de los máximos legales."]
     },
     {
       "name": "Clausula Septima",
@@ -319,11 +319,11 @@
           }
         }
       ],
-      "content": "OCTAVA.- SALARIO.- Durante la vigencia del presente Contrato, El Trabajador recibirá del Patrón como remuneración por sus servicios y las obligaciones asumidas conforme al mismo, un salario [COLOCAR MONTO DIARIO INTEGRADO DEL SALARIO], suma que incluye la parte proporcional del séptimo día, dicho pago se hará [COLOCAR PERIODICIDAD DE PAGO], en caso de que dicho día de pago no sea hábil en México, la remuneración se pagará el día hábil anterior, en el entendido de que dicho pago cubrirá los salarios devengados de cada séptimo día de cada semana al mes, respectivamente."
+      "content": ["OCTAVA.- SALARIO.- Durante la vigencia del presente Contrato, El Trabajador recibirá del Patrón como remuneración por sus servicios y las obligaciones asumidas conforme al mismo, un salario [COLOCAR MONTO DIARIO INTEGRADO DEL SALARIO], suma que incluye la parte proporcional del séptimo día, dicho pago se hará [COLOCAR PERIODICIDAD DE PAGO], en caso de que dicho día de pago no sea hábil en México, la remuneración se pagará el día hábil anterior, en el entendido de que dicho pago cubrirá los salarios devengados de cada séptimo día de cada semana al mes, respectivamente."]
     },
     {
       "name": "Clausula Novena",
-      "content": "NOVENA.- LUGAR DE PAGO DEL SALARIO.- El Trabajador expresamente conviene que el Patrón podrá pagarle su salario, bien en las oficinas del mismo o depositando éste el monto de cualquier otra prestación a su favor en la cuenta bancaria que el Trabajador designe, una vez hechas las retenciones y deducciones que corresponda, queda entendido y convenido que el depósito en la Institución de Crédito correspondiente hará las veces de recibo de salario en los términos del artículo 804 de la Ley Federal del Trabajo."
+      "content": ["NOVENA.- LUGAR DE PAGO DEL SALARIO.- El Trabajador expresamente conviene que el Patrón podrá pagarle su salario, bien en las oficinas del mismo o depositando éste el monto de cualquier otra prestación a su favor en la cuenta bancaria que el Trabajador designe, una vez hechas las retenciones y deducciones que corresponda, queda entendido y convenido que el depósito en la Institución de Crédito correspondiente hará las veces de recibo de salario en los términos del artículo 804 de la Ley Federal del Trabajo."]
     },
     {
       "name": "Clasula Decima",
@@ -336,7 +336,7 @@
           }
         }
       ],
-      "content": "DÉCIMA. - DIA DE DESCANSO. - El Trabajador tendrá derecho a disfrutar semanalmente de [COLOCAR CANTIDAD DE DIAS DE DESCANSO SEMANAL] de descanso con goce de sueldo, que determinará el Patrón de acuerdo a las necesidades de la empresa, queda entendido que la compensación por dicho día de descanso se incluye en el salario previsto en la Cláusula Octava, ya que el mismo representa el monto total de la compensación semanal de El Trabajador."
+      "content": ["DÉCIMA. - DIA DE DESCANSO. - El Trabajador tendrá derecho a disfrutar semanalmente de [COLOCAR CANTIDAD DE DIAS DE DESCANSO SEMANAL] de descanso con goce de sueldo, que determinará el Patrón de acuerdo a las necesidades de la empresa, queda entendido que la compensación por dicho día de descanso se incluye en el salario previsto en la Cláusula Octava, ya que el mismo representa el monto total de la compensación semanal de El Trabajador."]
     },
     {
       "name": "Clausula Decima Primera",
@@ -420,7 +420,7 @@
     },
     {
       "name": "Clausula Vigesima",
-      "content": "VIGÉSIMA. OBLIGACION DE “EL PATRON”   .- “LA EMPRESA”   se obliga a pagar a “EL TRABAJADOR” su salario en el lugar y tiempo convenidos, proporcionar los útiles, instrumentos y materiales de trabajo y local seguro para su guarda; abstenerse sus representantes de maltratos de palabra o de obra; contar con las instalaciones necesarias de acuerdo con los principios de seguridad e higiene, cumplir con las disposiciones relativas a la prevención de accidente y enfermedades de trabajo; y afiliar y pagar las cuotas y aportaciones de “EL TRABAJADOR” correspondientes al IMSS (INSTITUTO MEXICANO DEL SEGURO SOCIAL), INFONAVIT (INSTITUTO DEL FONDO NACIONAL DE LA VIVIENDA PARA LOS TRABAJADORES) y asumir cualquier otra obligación que le corresponda y ser derivada de la relación laboral que nos ocupa."
+      "content": ["VIGÉSIMA. OBLIGACION DE “EL PATRON”   .- “LA EMPRESA”   se obliga a pagar a “EL TRABAJADOR” su salario en el lugar y tiempo convenidos, proporcionar los útiles, instrumentos y materiales de trabajo y local seguro para su guarda; abstenerse sus representantes de maltratos de palabra o de obra; contar con las instalaciones necesarias de acuerdo con los principios de seguridad e higiene, cumplir con las disposiciones relativas a la prevención de accidente y enfermedades de trabajo; y afiliar y pagar las cuotas y aportaciones de “EL TRABAJADOR” correspondientes al IMSS (INSTITUTO MEXICANO DEL SEGURO SOCIAL), INFONAVIT (INSTITUTO DEL FONDO NACIONAL DE LA VIVIENDA PARA LOS TRABAJADORES) y asumir cualquier otra obligación que le corresponda y ser derivada de la relación laboral que nos ocupa."]
     },
     {
       "name": "Clausula Vigesima Primera",

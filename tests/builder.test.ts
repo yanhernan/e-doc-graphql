@@ -51,6 +51,6 @@ describe("Build Documents", () => {
     ) as string;
     const exist = fs.existsSync(res);
     expect(exist).to.be.eq(true);
-    fs.unlinkSync(res);
+    //fs.unlinkSync(res);
   });
 });
